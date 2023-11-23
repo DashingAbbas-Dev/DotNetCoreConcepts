@@ -97,5 +97,36 @@ namespace DotNetCoreConcepts
     }
     #endregion
     #endregion
+
+    #region Ref and Out
+    class OutKeyword
+    {
+        //The out is a keyword in C# which is used for the passing the arguments to methods as a reference type.
+        //It is generally used when a method returns multiple values.
+
+        // Method that calculates the square of a number and returns it through the out parameter
+        public void CalculateSumAndProduct(int x, int y, out int sumResult, out int productResult)
+        {
+            sumResult = x + y;
+            productResult = x * y;
+        }
+    }
+    class RefKeyword
+    {
+        //The ref is a keyword in C# which is used for the passing the arguments by a reference.
+        // if any changes made in this argument in the method will reflect in that variable when the control return to the calling method.
+        public void SetValue(ref string str1)
+        {
+            // Check parameter value 
+            if (str1 == "Geek")
+            {
+                Console.WriteLine("Hello!!Geek");
+            }
+            // Assign the new value 
+            // of the parameter 
+            str1 = "GeeksforGeeks";
+        }
+    }
+    #endregion
 }
 

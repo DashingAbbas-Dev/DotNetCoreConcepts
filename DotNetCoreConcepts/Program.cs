@@ -18,3 +18,27 @@ Console.WriteLine("The value of str: {0}", Const.str);
 
 ReadOnly readOnly = new ReadOnly(100, 200);
 #endregion
+
+#region Ref and Out
+OutKeyword @out = new OutKeyword();
+
+int a = 10;
+int b = 20;
+int sum;
+int product;
+
+// Calling the CalculateSumAndProduct method with two out parameters
+@out.CalculateSumAndProduct(a, b, out sum, out product);
+
+Console.WriteLine($"Input values: a = {a}, b = {b}");
+Console.WriteLine($"Sum: {sum}");
+Console.WriteLine($"Product: {product}");
+
+RefKeyword @ref = new RefKeyword();
+// Assign string value 
+string str = "Geek";
+// Pass as a reference parameter 
+@ref.SetValue(ref str);
+// Display the given string 
+Console.WriteLine(str);
+#endregion
