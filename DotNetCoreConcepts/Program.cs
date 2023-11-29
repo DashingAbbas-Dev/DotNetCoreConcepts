@@ -42,3 +42,55 @@ string str = "Geek";
 // Display the given string 
 Console.WriteLine(str);
 #endregion
+
+#region Access Modifiers
+// Create an instance of MyClass
+AccessModifiers myObject = new AccessModifiers();
+
+#region Access Public Members
+
+// Access public members
+Console.WriteLine($"Public Field: {myObject.publicField}");
+myObject.PublicMethod();
+
+#endregion
+
+#region Access Private Members
+
+// Uncommenting the lines below will result in compilation errors
+// because private members are not accessible from outside the class.
+// Console.WriteLine($"Private Field: {myObject.privateField}");
+// myObject.PrivateMethod();
+
+#endregion
+
+#region Access Internal Members
+
+// Access internal members
+Console.WriteLine($"Internal Field: {myObject.internalField}");
+myObject.InternalMethod();
+
+#endregion
+
+#region Create DerivedClass Object
+
+// Create an instance of the derived class
+DerivedClass derivedObject = new DerivedClass();
+
+#endregion
+
+#region Access Protected Members from Derived Class
+
+// Access protected members from the derived class
+derivedObject.AccessProtectedField();
+derivedObject.ProtectedMethod(); // Accessing protected method from the base class
+
+#endregion
+
+#region Uncommenting the line below will result in a compilation error
+// because the protected method is not accessible from outside the derived class.
+// derivedObject.privateMethod();
+
+#endregion
+
+#endregion

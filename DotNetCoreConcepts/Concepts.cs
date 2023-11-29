@@ -128,5 +128,79 @@ namespace DotNetCoreConcepts
         }
     }
     #endregion
+
+    #region Access Modifiers
+    // Define a class with different access modifiers
+    class AccessModifiers
+    {
+        #region Public Members
+
+        // Public field - accessible from any class
+        public int publicField = 10;
+
+        // Public method - accessible from any class
+        public void PublicMethod()
+        {
+            Console.WriteLine("Public Method");
+        }
+
+        #endregion
+
+        #region Private Members
+
+        // Private field - accessible only within this class
+        private int privateField = 20;
+
+        // Private method - accessible only within this class
+        private void PrivateMethod()
+        {
+            Console.WriteLine("Private Method");
+        }
+
+        #endregion
+
+        #region Protected Members
+
+        // Protected field - accessible within this class and by derived classes
+        protected int protectedField = 30;
+
+        // Protected method - accessible within this class and by derived classes
+        protected void ProtectedMethod()
+        {
+            Console.WriteLine("Protected Method");
+        }
+
+        #endregion
+
+        #region Internal Members
+
+        // Internal field - accessible only within the same assembly
+        internal int internalField = 40;
+
+        // Internal method - accessible only within the same assembly
+        internal void InternalMethod()
+        {
+            Console.WriteLine("Internal Method");
+        }
+
+        #endregion
+    }
+
+    // Derived class
+    class DerivedClass : AccessModifiers
+    {
+        #region Derived Class Members
+
+        public void AccessProtectedField()
+        {
+            // Accessing protected field from the base class
+            Console.WriteLine($"Derived Class accessing protected field: {protectedField}");
+        }
+
+        #endregion
+    }
+
+
+    #endregion
 }
 
