@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCoreConcepts", "DotNe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsharpLogicalPrograms", "CsharpLogicalPrograms\CsharpLogicalPrograms.csproj", "{909D7967-B97F-4F8C-9CEB-FF5658EB653F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BenchMark", "BenchMark\BenchMark.csproj", "{EC711BB4-B4E6-43D3-89D6-BA478D700F8E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{909D7967-B97F-4F8C-9CEB-FF5658EB653F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{909D7967-B97F-4F8C-9CEB-FF5658EB653F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{909D7967-B97F-4F8C-9CEB-FF5658EB653F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC711BB4-B4E6-43D3-89D6-BA478D700F8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC711BB4-B4E6-43D3-89D6-BA478D700F8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC711BB4-B4E6-43D3-89D6-BA478D700F8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC711BB4-B4E6-43D3-89D6-BA478D700F8E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
